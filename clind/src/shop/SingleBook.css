@@ -1,0 +1,59 @@
+.single-book-container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .book-image {
+    flex: 0 0 30%;
+    margin-right: 20px;
+  }
+  
+  .book-image img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .book-details {
+    flex: 1;
+  }
+  
+  .book-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .book-details h2 {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .book-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .book-actions {
+    margin-top: 20px;
+  }
+  
+  .book-actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .book-actions .download-button {
+    background-color: #f0c14b;
+    color: #111;
+  }
+  
+  .book-actions .purchase-button {
+    background-color: #ff9900;
+    color: #fff;
+  }
+  
