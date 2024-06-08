@@ -7,7 +7,7 @@ const Allbooks = () => {
   const booksPerPage = 30;
 
   useEffect(() => {
-    fetch("http://localhost:5000/all-books")
+    fetch(`${window.location.origion}/all-books`)
       .then((res) => res.json())
       .then((data) => {
         // Filter books by category "Romance"

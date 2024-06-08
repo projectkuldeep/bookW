@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import BookCards from "../components/BookCards";
 const EveryBook = () => {
   useEffect(() => {
-    fetch("http://localhost:5000/all-books")
+    fetch(`${window.location.origion}/all-books`)
       .then((res) => res.json())
       .then(
         (data) => setBooks(data)

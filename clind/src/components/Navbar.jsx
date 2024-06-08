@@ -69,7 +69,7 @@ const Navbar = () => {
             ))}
           </ul>
           {/* // Search button */}
-          {/* <div>
+          <div>
             <input
               type="search"
               name="search"
@@ -80,7 +80,7 @@ const Navbar = () => {
             <button className="bg-green-600 px-6 py-2 text-white font-medium hover:bg-green-800 transition-all ease-in duration-200 ">
               Search
             </button>
-          </div> */}
+          </div>
 
           {/* btn for lg  devices */}
           <div className="space-x-12 hidden lg:flex items-center ">

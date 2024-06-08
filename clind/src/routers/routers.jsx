@@ -34,6 +34,7 @@ import Login from "../components/Login";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Logout from "../components/Logout";
 import CHome from "../converter/Home";
+import PrivacyP from "../PrivateRoute/PrivacyP";
 
 const router = createBrowserRouter([
   {
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
         path: "/book/:_id",
         element: <SingleBook />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/book/${params._id}`),
+          fetch(`${window.location.origion}/book/${params._id}`),
       },
 
       { path: "/EveryCategory", element: <EveryCategory /> },
@@ -134,7 +135,7 @@ const router = createBrowserRouter([
         path: "/admin/dashboard/Edit-books/:_id",
         element: <EditBook />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/book/${params._id}`),
+          fetch(`${window.location.origion}/${params._id}`),
       },
     ],
   },
@@ -153,6 +154,10 @@ const router = createBrowserRouter([
   {
     path: "/ConverterHome",
     element: <CHome />,
+  },
+  {
+    path: "/PrivayP",
+    element: <PrivacyP></PrivacyP>,
   },
 ]);
 
